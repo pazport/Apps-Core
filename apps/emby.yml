@@ -17,7 +17,7 @@
         extport: '8096'
         intport2: '8920'
         extport2: '8920'
-        image: 'linuxserver/emby'
+        image: 'linuxserver/emby:beta'
 
     # CORE (MANDATORY) ############################################################
     - name: 'Including cron job'
