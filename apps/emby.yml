@@ -17,7 +17,7 @@
         extport: '8096'
         intport2: '8920'
         extport2: '8920'
-        image: 'linuxserver/emby'
+        image: 'emby/embyserver'
 
     # CORE (MANDATORY) ############################################################
     - name: 'Including cron job'
@@ -55,8 +55,9 @@
     - name: 'Setting {{pgrole}} ENV'
       set_fact:
         pg_env:
-          PUID: '1000'
-          PGID: '1000'
+          UID: '1000'
+          GID: '1000'
+          GIDLIST: '1000'
           NVIDIA_VISIBLE_DEVICES: 'all'
           NVIDIA_DRIVER_CAPABILITIES: 'compute,video,utility'
 
