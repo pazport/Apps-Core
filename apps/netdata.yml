@@ -51,6 +51,7 @@
         pg_env:
           PUID: '1000'
           PGID: '1000'
+          DOCKER_USR: 'root'
 
     # MAIN DEPLOYMENT #############################################################
     - name: 'Deploying {{pgrole}}'
