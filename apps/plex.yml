@@ -389,7 +389,7 @@
 
     - name: Set 'default_db_cache_size' variable
       set_fact:
-        default_db_cache_size: '6000'
+        default_db_cache_size: '60000000'
 
     - name: Check if 'plex.db_cache_size' was specified
       set_fact:
